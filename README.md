@@ -19,12 +19,12 @@ gsutil acl ch -u AllUsers:R gs://$PROJECT_ID/selfie.png
 gsutil acl ch -u AllUsers:R gs://$PROJECT_ID/city.png
 ```
 ## # GSP038
-## CREATE AN API_KEY > APIs & Services > Credentials > Create Credentials > API key
-## Run in cloudshell 
+## 1. CREATE AN API_KEY > APIs & Services > Credentials > Create Credentials > API key
+## 2. Run in cloudshell 
 ```cmd
 gcloud beta compute ssh  linux-instance
 ```
-### Press Y Enter > Enter > Enter > Press N Enter
+### 3. Press Y Enter > Enter > Enter > Press N Enter
 ```cmd
 gcloud services enable apikeys.googleapis.com
 gcloud alpha services api-keys create --display-name="CloudHustlers" 
@@ -50,19 +50,19 @@ cat result.json
 ```cmd
 https://console.cloud.google.com/vertex-ai/workbench/user-managed?
 ```
-### Open JupyterLab
-### Generative-ai > Language > prompts > intro_prompt_design.ipynb (Run each cell one at a time)
-### examples > ideation.ipynb
+### 1. Open JupyterLab
+### 2. Generative-ai > Language > prompts > intro_prompt_design.ipynb (Run each cell one at a time)
+### 3. examples > ideation.ipynb
 
 # GSP1150
-## Open the link
+## 1. Open the link
 ```cmd
 https://console.cloud.google.com/vertex-ai/workbench/user-managed?
 ```
-### Open JupyterLab
-### Generative-ai > Language > prompts > intro_prompt_design.ipynb (Run each cell one at a time)
-### Go back to language
-### getting-started >  intro_palm_api.ipynb (Run each cell one at a time)
+### 2. Open JupyterLab
+### 3. Generative-ai > Language > prompts > intro_prompt_design.ipynb (Run each cell one at a time)
+### 4. Go back to language
+### 5. getting-started >  intro_palm_api.ipynb (Run each cell one at a time)
 
 # GSP1154
 
@@ -74,7 +74,7 @@ It was a time well spent!
 ```
 >select the model as ```text-bison@001``` > Submit > Save > Prompt name ```Hustler1```
 
-### Click Language 
+### 1. Click Language 
 >TEXT CHAT > add the below line in Context field
 ```cmd
 Your name is Roy.  
@@ -93,7 +93,7 @@ My computer is so slow
 
 # ARC122
 
-## Run in cloudshell
+## 1. Run in cloudshell
 ```cmd
 gcloud alpha services api-keys create --display-name="CloudHustlers" 
 KEY_NAME=$(gcloud alpha services api-keys list --format="value(name)" --filter "displayName=CloudHustlers")
